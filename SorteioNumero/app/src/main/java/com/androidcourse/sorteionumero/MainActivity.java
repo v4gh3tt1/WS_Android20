@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,9 +16,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void testeAlterar (View view) {
+    public void alterarTexto (View view) {
 
         TextView alterarTexto = findViewById(R.id.textView2_Resultado);
-        alterarTexto.setText ("Texto Alterado");
+
+        int numSorteio = new Random().nextInt(11);
+
+        alterarTexto.setText ("" + numSorteio);
     }
 }
