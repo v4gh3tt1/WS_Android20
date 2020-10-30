@@ -22,6 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
         int numSorteio = new Random().nextInt(11);
 
-        alterarTexto.setText ("" + numSorteio);
+        alterarTexto.setText ("" + numSorteio + "");
     }
 }
