@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
         TextView alterarTexto = findViewById(R.id.textView2_Resultado);
 
-        int numSorteio = new Random().nextInt(11);
+        int numSorteio = new Random().nextInt(21);
 
-        alterarTexto.setText ("" + numSorteio +  "");
+        alterarTexto.setText ("" + numSorteio);
     }
 }
